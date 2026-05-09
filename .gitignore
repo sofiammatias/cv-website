@@ -1,0 +1,10 @@
+Lib/
+etc/
+Include/
+Scripts/
+share/
+pyvenv.cfg
+__pycache__/
+*.pyc
+.env
+.venv/
