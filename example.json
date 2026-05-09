@@ -1,0 +1,52 @@
+{
+  "events": [
+    {
+      "start_date": { "month": "06", "year": "2023" },
+      "end_date": null,
+      "text": {
+        "headline": "Power BI Report Server Administrator @ Passio Consulting",
+        "text": "<p><strong>Tag:</strong> Data Engineering / BI Platform Administration</p>\n<p><strong>Summary:</strong> Ensuring stability, governance, and performance of the Power BI Report Server platform in an on-premises banking environment.</p>\n<ul>\n  <li>Full administration of the Power BI RS platform (on-premises)</li>\n  <li>Access management, governance, and compliance</li>\n  <li>Development and maintenance of monitoring dashboards</li>\n  <li>Technical troubleshooting and incident resolution</li>\n  <li>Automation of repetitive tasks (Python / PowerShell)</li>\n  <li>Optimization of BI platform performance and reliability</li>\n</ul>"
+      }
+    },
+    {
+      "start_date": { "month": "05", "year": "2023" },
+      "end_date": { "month": "06", "year": "2023" },
+      "text": {
+        "headline": "Teacher Assistant @ Le Wagon",
+        "text": "<p><strong>Tag:</strong> Teaching / Data Science Support</p>\n<p><strong>Summary:</strong> Supporting students in Data Science and Data Analytics bootcamps, ensuring smooth learning and technical understanding.</p>\n<ul>\n  <li>Assisted students with exercises, debugging, and programming logic</li>\n  <li>Provided support in Python, SQL, Pandas, and Machine Learning</li>\n  <li>Explained technical concepts clearly and effectively</li>\n  <li>Resolved technical issues during classes</li>\n</ul>"
+      }
+    },
+    {
+      "start_date": { "month": "06", "year": "2012" },
+      "end_date": { "month": "06", "year": "2022" },
+      "text": {
+        "headline": "Project Manager @ Albatroz Engenharia",
+        "text": "<p><strong>Tag:</strong> Project Management / Software & Hardware Engineering</p>\n<p><strong>Summary:</strong> Led a multidisciplinary engineering team (5–9 people) delivering software and hardware projects for aviation and defense.</p>\n<ul>\n  <li>Managed a multidisciplinary engineering team (software, hardware, electronics)</li>\n  <li>Planned, executed, and delivered complex technical projects</li>\n  <li>Coordinated with clients, partners, and stakeholders</li>\n  <li>Ensured quality, documentation, and technical compliance</li>\n  <li>Managed timelines, resources, and priorities</li>\n</ul>"
+      }
+    },
+    {
+      "start_date": { "month": "11", "year": "2010" },
+      "end_date": { "month": "05", "year": "2012" },
+      "text": {
+        "headline": "Researcher @ IDMEC",
+        "text": "<p><strong>Tag:</strong> R&D / Renewable Energy Modeling</p>\n<p><strong>Summary:</strong> Developed modeling tools for offshore renewable energy capacity scenarios.</p>\n<ul>\n  <li>Developed MATLAB-based software for energy capacity analysis</li>\n  <li>Contributed to the national Offshore Renewables Roadmap</li>\n  <li>Performed modeling, simulation, and scenario analysis</li>\n  <li>Prepared technical documentation and presented results</li>\n</ul>"
+      }
+    },
+    {
+      "start_date": { "month": "11", "year": "2006" },
+      "end_date": { "month": "02", "year": "2010" },
+      "text": {
+        "headline": "Associate Engineer @ CERN - ATLAS Detector",
+        "text": "<p><strong>Tag:</strong> Engineering / Safety Systems / HMI</p>\n<p><strong>Summary:</strong> Supervised the FPIAA project, ensuring operational safety in ATLAS areas.</p>\n<ul>\n  <li>Defined HMI software specifications</li>\n  <li>Supervised system installations and testing</li>\n  <li>Created ATLAS maps and technical documentation</li>\n  <li>Trained teams for the SLIMOS desk</li>\n  <li>Coordinated with international teams</li>\n</ul>"
+      }
+    },
+    {
+      "start_date": { "month": "04", "year": "2002" },
+      "end_date": { "month": "10", "year": "2006" },
+      "text": {
+        "headline": "Product Engineer @ Visteon",
+        "text": "<p><strong>Tag:</strong> Product Engineering / Automotive</p>\n<p><strong>Summary:</strong> Managed engineering changes and quality performance for automotive CD players.</p>\n<ul>\n                    <li>Managed engineering change notices (ECNs)</li>\n<li>Ensured product quality and performance</li>\n<li>Acted as key interface between plant, support, customers, and design teams (UK/USA)</li>\n<li>Performed failure analysis and implemented improvements</li>\n</ul>"
+      }
+    }
+  ]
+}

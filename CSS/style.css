@@ -1,0 +1,485 @@
+/* ---------------- GLOBAL STYLE IMPROVEMENTS ----------------- */
+
+html, body, [class*="css"] {
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Color palette */
+:root {
+    --primary: #0E4C92;
+    --secondary: #4FA3D1;
+    --accent: #00C0F2;
+    --light: #F5F7FA;
+    --text-dark: #1A1A1A;
+}
+
+/* Improve text readability */
+p, li, div:not(h1):not(h2):not(h3):not(h4) {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-dark);
+}
+
+/* -------------------------- SIDEBAR ------------------------- */
+
+[data-testid=stSidebar] {
+    background-color: var(--light);
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Circular profile image */
+[data-testid=stSidebar] img {
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Sidebar text */
+[data-testid=stSidebar] p, 
+[data-testid=stSidebar] div {
+    color: var(--text-dark);
+}
+
+/* -------------------------- LINKS --------------------------- */
+
+a {
+    display: block;
+    color: var(--primary) !important;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary) !important;
+    text-decoration: underline;
+}
+
+/* -------------------------- TABS --------------------------- */
+
+.stTabs [data-baseweb="tab"] {
+    background-color: #e9eef5;
+    border-radius: 6px 6px 0 0;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: white;
+    border-bottom: 3px solid var(--primary);
+    color: var(--primary);
+}
+
+/* Soft shadow for all bordered containers */
+div[data-testid="stContainer"][style*="border"] {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* General container rounding */
+div[data-testid="stContainer"] {
+    border-radius: 10px;
+}
+
+
+/* Underline for section headers */
+.section-header {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+}
+
+/* ------------------------- FOOTER -------------------------- */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+}
+
+/* -------------------- SPACING HELPERS ---------------------- */
+
+.block-space {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Remove default top/bottom padding of the main page */
+.block-container {
+    padding-top: 3rem !important;
+    padding-bottom: 1rem !important;
+}
+
+/* Center all markdown text inside the sidebar */
+[data-testid=stSidebar] .stMarkdown {
+    text-align: center !important;
+}
+
+/* Center the download button */
+[data-testid="stSidebar"] .stButton > button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ------------------------ ABOUT ME ------------------------- */
+/* ------------------------  No CSS -------------------------- */
+
+/* ------------------------ TIMELINE ------------------------- */
+.timeline {
+    border-left: 3px solid #0E4C92;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    background: #ffffff;
+    border: 1px solid #d9e2f3;
+    border-radius: 12px;
+    padding: 1.8rem;
+    margin-top: 0rem;
+    box-shadow: 0 4px 12px rgba(14, 76, 146, 0.08);
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.timeline-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0E4C92;
+}
+
+.timeline-date {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.timeline-text {
+    font-size: 15px;
+    color: #333;
+}
+
+/* -------------------------- CARDS -------------------------- */
+/* Metric 1 — azul muito claro */
+[data-testid="stMetric"]:nth-of-type(1) {
+    background: #a5c7f8;
+    padding: 14px 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Metric 2 — azul médio */
+[data-testid="stMetric"]:nth-of-type(2) {
+    background: linear-gradient(135deg, #d0ddf3 0%, #728fc0 100%);
+    padding: 14px 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Metric 3 — azul mais escuro */
+[data-testid="stMetric"]:nth-child(3) {
+    background: linear-gradient(135deg, #b4c7e8 0%, #698bbb 100%);
+    padding: 14px 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* White text for all metrics */
+[data-testid=stMetricValue],
+[data-testid=stMetricLabel],
+[data-testid=stMetricDelta] {
+    color: white !important;
+}
+
+/* --------------------------- SKILLS ------------------------ */
+/* GRID PRINCIPAL */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+/* COLUNAS */
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CARTÕES */
+/* CARTÃO TÉCNICO DESTACADO */
+.technical-highlight {
+    border: 2px solid #0E4C92;
+    box-shadow: 0 6px 18px rgba(14, 76, 146, 0.15);
+    background: #f7faff;
+}
+
+/* TÍTULO TÉCNICO DESTACADO */
+.tech-title {
+    color: #0E4C92;
+    font-weight: 800;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+/* TÍTULOS NORMAIS */
+.skill-card {
+    background: #ffffff;
+    border: 1px solid #d9e2f3;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(14, 76, 146, 0.08);
+}
+
+/* TÍTULOS */
+.skill-card h3 {
+    color: #0E4C92;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+/* SUBTÍTULOS TÉCNICOS */
+.skill-subtitle {
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+    color: #0E4C92;
+    font-size: 0.95rem;
+}
+
+/* LISTAS */
+.skill-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* BULLETS — círculo azul corporativo */
+.skill-list li {
+    margin: 0.25rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+    font-size: 0.92rem;
+    color: #333;
+}
+
+.skill-list li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #0E4C92;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+
+/* -------------------------- EDUCATION ---------------------- */
+/* CARD PRINCIPAL */
+.education-card {
+    background: #ffffff;
+    border: 1px solid #d9e2f3;
+    border-radius: 12px;
+    padding: 1.8rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 12px rgba(14, 76, 146, 0.08);
+}
+
+/* DATA */
+.education-date {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+}
+
+/* TÍTULO DO CURSO */
+.education-title {
+    color: #0E4C92;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+/* INSTITUIÇÃO */
+.education-school {
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+/* RESUMO */
+.education-summary {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* LISTAS */
+.education-list,
+.education-skills {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 1rem 0;
+}
+
+.education-list li,
+.education-skills li {
+    margin: 0.25rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+    font-size: 0.92rem;
+    color: #333;
+}
+
+/* BULLETS — círculo azul corporativo */
+.education-list li::before,
+.education-skills li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #0E4C92;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+
+/* SUBTÍTULO */
+.education-subtitle {
+    font-weight: 600;
+    color: #0E4C92;
+    margin: 1rem 0 0.3rem 0;
+    font-size: 0.95rem;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .education-card {
+        padding: 1.2rem;
+    }
+}
+/* ---------------- PROJECT CARDS ---------------- */
+.project-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+    gap: 2rem !important;
+    margin-bottom: 1.5rem !important;
+    margin-top: 1rem !important;
+}
+
+.project-badge {
+    display: inline-block;
+    background-color: #0E4C92;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-bottom: 0.6rem;
+}
+
+.project-card {
+    background: #ffffff;
+    border: 1px solid #d9e2f3;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(14, 76, 146, 0.08);
+    padding: 0;
+    overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(14, 76, 146, 0.18);
+}
+
+.project-image {
+    width: 100%;
+    border-bottom: 1px solid #d9e2f3;
+}
+
+.project-content {
+    padding: 1rem 1.2rem;
+    /* height: 250px; */
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0E4C92;
+    margin-bottom: 0rem;
+}
+
+.project-links a {
+    font-size: 0.90rem;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.project-summary {
+    margin-top: 0.5rem;
+    font-size: 0.90rem;
+    margin-bottom: 0.8rem;
+}
+
+/* ---------------- CERTIFICATE CARDS ---------------- */
+
+.cert-card {
+    background: #ffffff;
+    border: 1px solid #d9e2f3;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(14, 76, 146, 0.08);
+}
+
+.cert-year {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0E4C92;
+    margin-bottom: 0.8rem;
+}
+
+.cert-list {
+    list-style: none;      /* remove o marcador preto */
+    padding-left: 0;       /* remove indentação extra */
+    margin-left: 0;        /* garante alinhamento perfeito */
+}
+
+.cert-list li {
+    margin: 0.4rem 0;
+    padding-left: 1.2rem;  /* espaço para a bolinha azul */
+    position: relative;
+}
+
+.cert-list li::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #0E4C92;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.cert-subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0E4C92;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+}
