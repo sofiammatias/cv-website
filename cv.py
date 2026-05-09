@@ -261,7 +261,7 @@ with education:
           <div class="education-title">Bootcamp in Data Science</div>
           <div class="education-school">Le Wagon</div>
           <p class="education-summary">
-            Intensive 9-week program focused on Python, data analysis, machine learning, APIs, and deployment.
+            Intensive 10-week program focused on Python, data analysis, machine learning, APIs, and deployment.
           </p>
           <ul class="education-list">
             <li>Python programming & data manipulation</li>
