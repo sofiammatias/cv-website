@@ -480,8 +480,9 @@ with certificates:
     <div class="cert-card">
         <div class="cert-year">2023</div>
         <ul class="cert-list">
-            <li>Google Certified Professional Data Engineer (course only) - A Cloud Guru</li>
-            <li><a href="https://onedrive.live.com/?cid=B8E277C8C16E4C5F&id=B8E277C8C16E4C5F%21255852&parId=B8E277C8C16E4C5F%21167&o=OneUp" target="_blank">Denodo Platform Installation</a></li>
+            <li><a href="https://1drv.ms/i/c/b8e277c8c16e4c5f/IQBLXPwbGaVHQZ7lufWrfII9AZi1N3I-PFE67zIJrdImQY0?e=j3eINF" target="_blank">Google Professional Data Engineer - A Cloud Guru</a></li>
+            <li><a href="https://1drv.ms/i/c/b8e277c8c16e4c5f/IQBLXPwbGaVHQZ7lufWrfII9AZi1N3I-PFE67zIJrdImQY0?e=j3eINF" target="_blank">Introduction to Containers and Docker - A Cloud Guru</a></li>
+            <li><a href="https://1drv.ms/i/c/b8e277c8c16e4c5f/IQBfTG7ByHfiIIC4bOcDAAAAAZx-pzJ2zFTDGIOxX-NWuGs?e=qUo10Y" target="_blank">Denodo Platform Installation</a></li>
             <li><a href="https://www.udemy.com/certificate/UC-e6c07e79-083b-440a-8215-7cf312ecf513/" target="_blank">Power BI: Deployment and Management – Udemy</a></li>
             <li><a href="https://www.coursera.org/account/accomplishments/certificate/9YV78UQRMDVN" target="_blank">Getting Started with Power BI Desktop – Coursera</a></li>
         </ul>
