@@ -90,36 +90,15 @@ with st.sidebar:
 
 st.subheader('Sofia Matias - Data Engineer')
 #------- tabs -------------#  
-aboutme, skills, experience, education, projects, certificates = st.tabs(["About Me", "Skills", "Professional Experience", "Education", "Projects", "Certificates"])
+aboutme, skills, experience, education, projects, certificates = st.tabs(["About Me", "Skills", "Work Experience", "Education", "Projects", "Certificates"])
 # -------------- tabs styling -------------------------#
 st.markdown("""
 <style>
-
-	.stTabs [data-baseweb="tab-list"] {
-		gap: 5px;
-    }
-  .stTabs [data-baseweb="tab-highlight"] {
-        background-color:lightblue;
-        font-color:black;    
-    }
-	.stTabs [data-baseweb="tab"] {
-		height: 45px;
-    width: 200px;
-    white-space: pre-wrap;
-		background-color: #F0F2F6;
-		border-radius: 4px 4px 0px 0px;
-		gap: 1px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    }
-
-	.stTabs [aria-selected="true"] {
-  		background-color: #FFFFFF;
-	}
-
+  #MainMenu {visibility: hidden;}
+  footer {visibility: hidden;}
+  header {visibility: hidden;}
 </style>""", unsafe_allow_html=True)
+
 
 #------------------ about me tab ---------------------#
 with aboutme:
