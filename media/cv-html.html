@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>CV — Sofia Matias | Data Engineer</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <style>
+    :root{
+      --bg:#f5f8fc;
+      --card:#ffffff;
+      --accent:#0E4C92;
+      --accent-soft:#e3f0fb;
+      --text:#1f2933;
+      --muted:#6b7280;
+      --border:#d0d7e2;
+      --radius:10px;
+      --shadow:0 4px 14px rgba(15,23,42,0.08);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    }
+
+    *{box-sizing:border-box;}
+
+    body{
+      margin:0;
+      padding:32px 16px;
+      background:linear-gradient(180deg,#f0f5fc 0%,#f7fafc 60%);
+      color:var(--text);
+      display:flex;
+      justify-content:center;
+    }
+
+    .page{
+      width:100%;
+      max-width:960px;
+      background:var(--card);
+      border-radius:16px;
+      box-shadow:var(--shadow);
+      padding:28px 32px 32px;
+    }
+
+    /* HEADER */
+    .header{
+      display:flex;
+      gap:20px;
+      border-bottom:1px solid var(--border);
+      padding-bottom:18px;
+      margin-bottom:18px;
+    }
+
+    .avatar img{
+      width:96px;
+      height:96px;
+      border-radius:8px;
+      object-fit:cover;
+      border:2px solid var(--accent);
+    }
+
+    .title-block h1{
+      margin:0 0 4px;
+      font-size:26px;
+      letter-spacing:0.02em;
+    }
+
+    .title-block h2{
+      margin:0 0 8px;
+      font-size:15px;
+      font-weight:600;
+      color:var(--accent);
+      text-transform:uppercase;
+      letter-spacing:0.12em;
+    }
+
+    .title-block p{
+      margin:0;
+      font-size:14px;
+      color:var(--muted);
+      max-width:520px;
+      line-height:1.5;
+    }
+
+    .contact{
+      margin-left:auto;
+      font-size:13px;
+      color:var(--muted);
+      line-height:1.5;
+      min-width:180px;
+    }
+
+    .contact strong{color:var(--text);}
+
+    /* LAYOUT */
+    .layout{
+      display:grid;
+      grid-template-columns:260px 1fr;
+      gap:20px;
+    }
+
+    .col-left,.col-right{font-size:14px;}
+
+    h3{
+      margin:0 0 8px;
+      font-size:14px;
+      text-transform:uppercase;
+      letter-spacing:0.16em;
+      color:var(--accent);
+    }
+
+    .section{
+      margin-bottom:18px;
+      padding-bottom:10px;
+      border-bottom:1px solid var(--border);
+    }
+
+    .section:last-child{border-bottom:0;padding-bottom:0;}
+
+    .tagline{
+      font-size:13px;
+      color:var(--muted);
+      margin-bottom:6px;
+    }
+
+    /* Pills */
+    .pill{
+      display:inline-block;
+      padding:4px 10px;
+      border-radius:999px;
+      background:var(--accent);
+      color:#ffffff;
+      font-size:11px;
+      font-weight:500;
+      margin:2px 6px 2px 0;
+    }
+
+    /* Items */
+    .item{
+      margin-bottom:12px;
+    }
+
+    .item-header{
+      display:flex;
+      justify-content:space-between;
+      gap:8px;
+      font-size:14px;
+    }
+
+    .item-header strong{font-weight:600;}
+
+    .item-header span{
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .item-sub{
+      font-size:13px;
+      color:var(--muted);
+      margin:2px 0 6px;
+    }
+
+    ul{
+      margin:0;
+      padding-left:18px;
+    }
+
+    ul li{
+      margin-bottom:4px;
+      line-height:1.4;
+    }
+
+    /* Projects */
+    .project-block{
+      margin-bottom:14px;
+      padding:10px 12px;
+      border-radius:var(--radius);
+      background:#f8fbff;
+      border:1px solid #e0ebf7;
+    }
+
+    .project-block strong{font-size:14px;}
+
+    .project-meta{
+      font-size:12px;
+      color:var(--muted);
+      margin-bottom:4px;
+    }
+
+    .placeholder-img{
+      margin-top:4px;
+      font-size:11px;
+      color:var(--muted);
+      font-style:italic;
+    }
+
+    @media (max-width:800px){
+      .layout{grid-template-columns:1fr;}
+      .header{flex-direction:column;}
+      .contact{margin-left:0;}
+      .page{padding:20px 16px;}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="avatar">
+        <img src="./media/sofia-portrait2.png" alt="Portrait of Sofia Matias" />
+      </div>
+
+      <div class="title-block">
+        <h1>Sofia Matias</h1>
+        <h2>DATA ENGINEER · POWER BI REPORT SERVER ADMINISTRATOR</h2>
+        <p>
+          Data Engineer with strong experience in Power BI Report Server administration within the banking sector 
+          (on‑premises environment). Skilled in platform governance, monitoring, troubleshooting, and BI infrastructure 
+          optimization. Brings 20+ years of multidisciplinary engineering experience across software, research, and 
+          technical project management.
+        </p>
+      </div>
+
+      <div class="contact">
+        <strong>Contact</strong><br/>
+        sofia.m.matias@gmail.com<br/>
+        Alcochete · Portugal<br/><br/>
+        <strong>Links</strong><br/>
+        github.com/sofiammatias<br/>
+        linkedin.com/in/sofia-matias/<br/>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="layout">
+
+      <!-- LEFT COLUMN -->
+      <section class="col-left">
+
+        <!-- SKILLS -->
+        <div class="section">
+          <h3>Core Skills</h3>
+          <div>
+            <span class="pill">Python</span>
+            <span class="pill">SQL (SQL Server, PostgreSQL, SQLite)</span>
+            <span class="pill">ETL & Pipelines · Prefect</span>
+            <span class="pill">Power BI · DAX · Power Query</span>
+            <span class="pill">Power BI Report Server Admin</span>
+            <span class="pill">APIs · FastAPI</span>
+            <span class="pill">ML basics · Scikit-Learn</span>
+            <span class="pill">Dashboards · Storytelling</span>
+            <span class="pill">Git · Docker · CI/CD basics</span>
+          </div>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="section">
+          <h3>Education</h3>
+
+          <div class="item">
+            <div class="item-header">
+              <strong>Bootcamp in Data Science</strong>
+              <span>2022 · Le Wagon</span>
+            </div>
+            <div class="item-sub">Python, ML, DL, APIs, SQL, MLflow, FastAPI, Streamlit</div>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <strong>Master Executive in Sustainable Energy Systems</strong>
+              <span>2010-2011 · IST/ISEG/MIT</span>
+            </div>
+            <div class="item-sub">Energy systems, economics, modelling, leadership</div>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <strong>BSc in Mechanical Engineering (Automation & Robotics)</strong>
+              <span>IST · Lisbon</span>
+            </div>
+            <div class="item-sub">Control systems, robotics, automation, sensors</div>
+          </div>
+        </div>
+
+        <!-- LANGUAGES -->
+        <div class="section">
+          <h3>Languages</h3>
+          <ul>
+            <li><strong>Portuguese:</strong> native</li>
+            <li><strong>English:</strong> fluent</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <!-- RIGHT COLUMN -->
+      <section class="col-right">
+
+        <!-- EXPERIENCE -->
+        <div class="section">
+          <h3>Professional Experience</h3>
+
+          <!-- PASSIO -->
+          <div class="item">
+            <div class="item-header">
+              <strong>Power BI Report Server Administrator / Data Engineer Consultant</strong>
+              <span>2023-Present · Passio Consulting · Banking</span>
+            </div>
+            <div class="item-sub">
+              Ensuring stability, governance, and performance of the Power BI Report Server platform in an on-premises banking environment.
+            </div>
+            <ul>
+              <li>Full administration of the Power BI Report Server platform (on-premises).</li>
+              <li>Access management, governance, and compliance with banking standards.</li>
+              <li>Development and maintenance of monitoring dashboards for platform health and usage.</li>
+              <li>Technical troubleshooting and incident resolution in collaboration with IT and business teams.</li>
+              <li>Automation of repetitive tasks using Python and PowerShell.</li>
+              <li>Optimization of BI platform performance and reliability.</li>
+            </ul>
+          </div>
+
+          <!-- ALBATROZ -->
+          <div class="item">
+            <div class="item-header">
+              <strong>Project Manager · Software & Hardware Engineering</strong>
+              <span>2012-2022 · Albatroz Engenharia</span>
+            </div>
+            <div class="item-sub">
+              Led multidisciplinary engineering teams delivering software and hardware solutions for aviation and defence.
+            </div>
+            <ul>
+              <li>Managed teams across software, hardware, and electronics.</li>
+              <li>Planned, executed, and delivered complex technical projects.</li>
+              <li>Coordinated with clients, partners, and international stakeholders.</li>
+              <li>Ensured quality, documentation, and compliance with technical standards.</li>
+              <li>Oversaw timelines, resources, and project priorities.</li>
+            </ul>
+          </div>
+
+          <!-- CERN -->
+          <div class="item">
+            <div class="item-header">
+              <strong>Associate Engineer · CERN (ATLAS Detector)</strong>
+              <span>2006-2010 · CERN</span>
+            </div>
+            <div class="item-sub">
+              Supervised HMI software and safety monitoring systems for the ATLAS detector.
+            </div>
+            <ul>
+              <li>Defined HMI software specifications and supervised installations.</li>
+              <li>Developed control and monitoring interfaces in high-demand environments.</li>
+              <li>Created ATLAS maps and technical documentation.</li>
+              <li>Trained teams for SLIMOS desk operations.</li>
+              <li>Collaborated with international teams in 24/7 operations.</li>
+            </ul>
+          </div>
+
+          <!-- VISTEON -->
+          <div class="item">
+            <div class="item-header">
+              <strong>Product Engineer · Automotive CD Players</strong>
+              <span>2002-2006 · Visteon</span>
+            </div>
+            <div class="item-sub">
+              Managed engineering changes and quality performance in automotive manufacturing.
+            </div>
+            <ul>
+              <li>Managed engineering change notices (ECNs).</li>
+              <li>Ensured product quality and performance.</li>
+              <li>Acted as interface between plant, engineering, and OEM clients.</li>
+              <li>Performed failure analysis and implemented corrective actions.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="section">
+          <h3> Data Projects Portfolio</h3>
+
+          <ul>
+            <li><a href="https://github.com/sofiammatias/etl-pipeline-austin-crime/">ETL Pipeline - Austin Crime Database Project</a></strong></li>
+            <li><a href="https://github.com/sofiammatias/project-biomassters">BioMassters App</a></li>
+            <li><a href="https://github.com/sofiammatias/data-visualization-houses">Houses For Sale — Jardim América</a></li>
+            <li><a href="https://github.com/sofiammatias/data-visualization-houses/blob/main/Data_Visualization_With_Streamlit.py">Data Visualization - Houses For Sale Project</a></li>
+            <li><a href="https://github.com/sofiammatias/ice-cube-neutrinos">IceCube Research Station</a></li>
+            <li><a href="https://github.com/sofiammatias/learning-equality-challenge">Learning Equality Challenge</a></li>
+            <li><a href="https://github.com/sofiammatias/netflix-eda">Netflix EDA Project</a></li>
+            <li><a href="https://github.com/sofiammatias/ticktick-bloom">TickTick Bloom Challenge</a></li>
+          </ul>
+        </div>
+
+      </section>
+    </main>
+  </div>
+</body>
+</html>

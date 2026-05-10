@@ -67,7 +67,7 @@ with st.sidebar:
   
   st.image ('./media/sofia-portrait2.png', width="stretch")
   
-  cvfile="./media/CV Sofia Matias 2023 (DE).pdf"
+  cvfile="./CV Sofia Matias 2026 (DE).pdf"
   c1, c2, c3 = st.columns([1, 3, 1])
   with open(cvfile, "rb") as file:
     with c2:
